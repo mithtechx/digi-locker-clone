@@ -1,0 +1,35 @@
+name: digi_locker
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/app_icon.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/p.png
+    - assets/aadhaar_header.png
+    - assets/digilocker_badge.png
+    - assets/aadhaar_qr.png
+    - assets/aadhaar_logo.png
+    - assets/dl_logo.png
