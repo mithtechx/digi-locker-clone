@@ -25,12 +25,14 @@ jobs:
 
       - name: Install Dependencies
         run: flutter pub get
+        working-directory: ./digi_locker
 
       - name: Build Release APK
         run: flutter build apk --release
+        working-directory: ./digi_locker
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: app-release
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: digi_locker/build/app/outputs/flutter-apk/app-release.apk
